@@ -29,5 +29,7 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:+'
     compile 'com.squareup.retrofit2:adapter-rxjava:+'
     compile 'io.reactivex:rxandroid:1.2.1'
+
+
     testCompile 'junit:junit:4.12'
 }

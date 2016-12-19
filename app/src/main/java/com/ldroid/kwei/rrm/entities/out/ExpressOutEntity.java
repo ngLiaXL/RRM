@@ -1,7 +1,7 @@
 package com.ldroid.kwei.rrm.entities.out;
 
 import com.google.gson.annotations.Expose;
-import com.ldroid.kwei.volley.common.entities.BaseEntity;
+import com.ldroid.kwei.rrm.entities.BaseEntity;
 
 
 public class ExpressOutEntity extends BaseEntity {

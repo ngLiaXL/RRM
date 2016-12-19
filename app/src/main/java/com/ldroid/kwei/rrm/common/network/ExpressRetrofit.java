@@ -16,12 +16,12 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 
-public class API {
+public class ExpressRetrofit {
 
     private Retrofit retrofit;
     private static ExpressService instance;
 
-    public API() {
+    public ExpressRetrofit() {
         this.retrofit = (new Retrofit.Builder())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
@@ -32,7 +32,7 @@ public class API {
 
     public static ExpressService get() {
         if (instance == null) {
-            instance = new API().create(ExpressService.class);
+            instance = new ExpressRetrofit().create(ExpressService.class);
         }
         return instance;
     }
